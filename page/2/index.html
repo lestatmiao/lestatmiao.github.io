@@ -150,7 +150,7 @@
   <script type="text/javascript">
   	(function(){
   document.onreadystatechange = function(){
-    NProgress.configure({ easing: 'ease', speed: 500 });
+    NProgress.configure({ easing: 'ease', speed: 500, showSpinner: false });
     NProgress.start();
     if(document.readyState == "Interactive"){
       NProgress.set(0.7);
@@ -1807,12 +1807,11 @@ apache服务器需要安装proxy相关模块,如果是ubuntu环境可以直接�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="copyright" >
   
   &copy;  2017 &mdash; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
