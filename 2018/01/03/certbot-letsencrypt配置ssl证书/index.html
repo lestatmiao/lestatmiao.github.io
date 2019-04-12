@@ -108,7 +108,7 @@
 <meta name="keywords" content="ssl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="certbot+letsencrypt配置免费单证书多域名ssl证书">
-<meta property="og:url" content="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/index.html">
+<meta property="og:url" content="https://life.lestat.me/2018/01/03/certbot-letsencrypt配置ssl证书/index.html">
 <meta property="og:site_name" content="💻Lestat&#39;s Blog">
 <meta property="og:description" content="前些天看到微信公众平台官方公告关于公众平台接口不再支持HTTP方式调用的公告之后决定把项目的协议从http改成https,于是开始在网上查,完成之后总结了一点经验    本文演示的是通用证书,即在certbot命令中不需要指定--apache或者--nginx之类,只需要在完成证书生成之后在服务器配置文件里进行引用即可  Let’s EncryptLet’s Encrypt 认证签发为每3个月一次">
 <meta property="og:locale" content="zh-Hans">
@@ -145,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/">
+  <link rel="canonical" href="https://life.lestat.me/2018/01/03/certbot-letsencrypt配置ssl证书/">
 
 
 
@@ -380,7 +380,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/">
+    <link itemprop="mainEntityOfPage" href="https://life.lestat.me/2018/01/03/certbot-letsencrypt配置ssl证书/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lestat">
@@ -468,7 +468,7 @@
 <p>手动强制为证书续期<br>如果出现以下提示则说明更新成功<br><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Congratulations, all renew<span class="type">als</span> succeeded. The following certs have been renew<span class="type">ed</span>:</span><br></pre></td></tr></table></figure></p>
 <p>但为了更方便,通常使用<code>crontab -e</code>编辑定时任务,并加入<br><figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">0 </span><span class="number">0</span> <span class="number">1</span> * * certbot renew --force-renew “重启服务器命令”</span><br></pre></td></tr></table></figure></p>
 <p>实现每个月1号0点自动续期</p>
-<h3 id="在服务器配置相关证书"><a href="#在服务器配置相关证书" class="headerlink" title="在服务器配置相关证书"></a>在服务器配置相关证书</h3><p><a href="https://lestatmiao.github.io/2017/09/08/apache2-ssl/">apache2开启SSL</a></p>
+<h3 id="在服务器配置相关证书"><a href="#在服务器配置相关证书" class="headerlink" title="在服务器配置相关证书"></a>在服务器配置相关证书</h3><p><a href="https://lestatmiao.github.io/2017/09/08/apache2-ssl/" target="_blank" rel="noopener">apache2开启SSL</a></p>
 <p><strong>tips:</strong><br>如果有多个域名  </p>
 <ol>
 <li>可以用过在<code>Please enter in your domain name(s) (comma and/or space separated)  (Enter &#39;c&#39;
