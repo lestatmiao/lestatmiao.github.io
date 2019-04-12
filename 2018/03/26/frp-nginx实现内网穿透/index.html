@@ -5,13 +5,13 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA" />
-<meta name="baidu-site-verification" content="xz2BfD2pLc" />
+<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA">
+<meta name="baidu-site-verification" content="xz2BfD2pLc">
 
 
 
@@ -21,8 +21,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -41,7 +41,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -81,23 +81,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="nginx,frp," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="👨‍💻HappyHacking" type="application/atom+xml" />
+  <meta name="keywords" content="nginx,frp,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+  <link rel="alternate" href="/atom.xml" title="💻Lestat's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
 
 
 
@@ -109,7 +109,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="frp+nginx实现内网穿透">
 <meta property="og:url" content="https://lestatmiao.github.io/2018/03/26/frp-nginx实现内网穿透/index.html">
-<meta property="og:site_name" content="👨‍💻HappyHacking">
+<meta property="og:site_name" content="💻Lestat&#39;s Blog">
 <meta property="og:description" content="写在前面:上一篇文章写了关于ngrok+nginx实现内网穿透的流程,并提出了一些存在的问题,昨天试过frp之后,将之前ngrok存在的无法映射本地域名的问题解决了    frp 是一个可用于内网穿透的高性能的反向代理应用，支持 tcp, udp, http, https 协议。   先决条件有一个域名,并解析到自己服务器上,如:*.frp.lestat.me有一个具备固定ip的公网服务器">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lestat.b0.upaiyun.com/blog/apache-alias.png">
@@ -148,7 +148,7 @@
 
 
 
-  <link rel="canonical" href="https://lestatmiao.github.io/2018/03/26/frp-nginx实现内网穿透/"/>
+  <link rel="canonical" href="https://lestatmiao.github.io/2018/03/26/frp-nginx实现内网穿透/">
 
 
 
@@ -171,7 +171,7 @@
   }
 })();
   </script>
-  <title>frp+nginx实现内网穿透 | 👨‍💻HappyHacking</title>
+  <title>frp+nginx实现内网穿透 | 💻Lestat's Blog</title>
   
 
 
@@ -209,7 +209,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title" id="type-title"></span>
         <span class="logo-line-after"><i></i></span>
@@ -221,7 +221,7 @@
   animation: blink 500ms infinite;
 }
 </style>
-    <input type='hidden' id='type-title-value' value='👨‍💻HappyHacking'>
+    <input type="hidden" id="type-title-value" value="💻Lestat" s blog'>
     <script type="text/javascript" src="/lib/jquery/index.js"></script>
     <script type="text/javascript" src="/js/src/theater.min.js"></script>
     <script>
@@ -256,7 +256,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -266,7 +266,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -276,7 +276,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -286,7 +286,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -296,7 +296,7 @@
         <li class="menu-item menu-item-music">
           <a href="/music/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br>
             
             音乐
           </a>
@@ -306,7 +306,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -319,7 +319,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -386,13 +386,13 @@
     <link itemprop="mainEntityOfPage" href="https://lestatmiao.github.io/2018/03/26/frp-nginx实现内网穿透/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LestatLee">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Lestat">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="https://lestat.b0.upaiyun.com/blog/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="👨‍💻HappyHacking">
+      <meta itemprop="name" content="💻Lestat's Blog">
     </span>
 
     
@@ -450,7 +450,7 @@
       
 
       
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.bootcss.com/aplayer/1.10.0/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.9.1/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote>
+        <blockquote>
 <p>写在前面:上一篇文章写了关于ngrok+nginx实现内网穿透的流程,并提出了一些存在的问题,昨天试过frp之后,将之前ngrok存在的无法映射本地域名的问题解决了  </p>
 </blockquote>
 <p><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a> 是一个可用于内网穿透的高性能的反向代理应用，支持 tcp, udp, http, https 协议。  </p>
@@ -500,7 +500,7 @@
 <li>本地apache/nginx虚拟主机配置域名别名(alias),根据自己环境而定</li>
 </ol>
 <p><img src="https://lestat.b0.upaiyun.com/blog/apache-alias.png" alt="mamp集成apache配置"></p>
-<h2 id="流程图解"><a href="#流程图解" class="headerlink" title="流程图解"></a>流程图解</h2><h3 id="假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目"><a href="#假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目" class="headerlink" title="假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目:"></a>假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目:</h3><p><img src="https://lestat.b0.upaiyun.com/blog/frp+nginx.png" alt=""></p>
+<h2 id="流程图解"><a href="#流程图解" class="headerlink" title="流程图解"></a>流程图解</h2><h3 id="假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目"><a href="#假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目" class="headerlink" title="假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目:"></a>假设甲使用的浏览器希望访问乙所在内网环境服务器的web项目:</h3><p><img src="https://lestat.b0.upaiyun.com/blog/frp+nginx.png" alt></p>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>尝试使用*.frps.lestat.me访问站点看是否正常,相比ngrok的流程,frp省去了编译,少踩不少坑,的确省事多了</p>
 
       
@@ -522,14 +522,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="LestatLee WeChat Pay"/>
+        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="Lestat WeChat Pay">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="LestatLee Alipay"/>
+        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="Lestat Alipay">
         <p>支付宝</p>
       </div>
     
@@ -645,7 +645,7 @@ gitment.render('container')
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -657,11 +657,9 @@ gitment.render('container')
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
-            <img class="site-author-image" itemprop="image"
-              src="https://lestat.b0.upaiyun.com/blog/avatar.jpg"
-              alt="LestatLee" />
+            <img class="site-author-image" itemprop="image" src="https://lestat.b0.upaiyun.com/blog/avatar.jpg" alt="Lestat">
           
-            <p class="site-author-name" itemprop="name">LestatLee</p>
+            <p class="site-author-name" itemprop="name">Lestat</p>
             <p class="site-description motion-element" itemprop="description"></p>
         </div>
 
@@ -781,18 +779,18 @@ gitment.render('container')
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright" >
+<div class="copyright">
   
   &copy;  2017 &mdash; 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">LestatLee</span>
+  <span class="author" itemprop="copyrightHolder">Lestat</span>
 
   
 </div>
-<div class='copyright' id='information'></div>
+<div class="copyright" id="information"></div>
 <script type="text/javascript" src="/js/src/theater.min.js"></script>
 <script>
   var theater = theaterJS();
@@ -815,23 +813,23 @@ gitment.render('container')
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-图片存储:<a href='https://www.upyun.com' target='_blank'>又拍云</a>
+图片存储:<a href="https://www.upyun.com" target="_blank">又拍云</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-博客托管:<a href='https://www.github.com' target='_blank'>Github</a>
+博客托管:<a href="https://www.github.com" target="_blank">Github</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-评论系统:<a href='https://github.com/imsun/gitment' target='_blank'>Gitment</a>
+评论系统:<a href="https://github.com/imsun/gitment" target="_blank">Gitment</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-站内搜索:<a href='https://www.algolia.com/' target='_blank'>Algolia</a>
+站内搜索:<a href="https://www.algolia.com/" target="_blank">Algolia</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-播放器:<a href='https://github.com/MoePlayer/APlayer' target='_blank'>Aplayer</a>
+播放器:<a href="https://github.com/MoePlayer/APlayer" target="_blank">Aplayer</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
@@ -1041,5 +1039,5 @@ document.addEventListener('visibilitychange', function() {
 	}
 });
 </script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

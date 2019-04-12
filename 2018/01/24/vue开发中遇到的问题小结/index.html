@@ -5,13 +5,13 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA" />
-<meta name="baidu-site-verification" content="xz2BfD2pLc" />
+<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA">
+<meta name="baidu-site-verification" content="xz2BfD2pLc">
 
 
 
@@ -21,8 +21,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -41,7 +41,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -81,23 +81,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="vue,组件," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="👨‍💻HappyHacking" type="application/atom+xml" />
+  <meta name="keywords" content="vue,组件,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+  <link rel="alternate" href="/atom.xml" title="💻Lestat's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
 
 
 
@@ -109,7 +109,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于vue中$nextTick的一点使用心得">
 <meta property="og:url" content="https://lestatmiao.github.io/2018/01/24/vue开发中遇到的问题小结/index.html">
-<meta property="og:site_name" content="👨‍💻HappyHacking">
+<meta property="og:site_name" content="💻Lestat&#39;s Blog">
 <meta property="og:description" content="当下公司在做一个媒体门户网站,后台由另一家公司使用java开发并提供接口,本人负责开发后台页面,使用的是vue-element-admin开发下面说一下问题场景,在开发过程中有一个后台管理员角色页面,其中包含一个表单dialog,在其中使用了el-tree组件,相关 代码结构如下:12345678910111213&amp;lt;div class=&quot;filter-container&quot;&amp;gt;    &amp;l">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-01-24T02:54:29.000Z">
@@ -145,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://lestatmiao.github.io/2018/01/24/vue开发中遇到的问题小结/"/>
+  <link rel="canonical" href="https://lestatmiao.github.io/2018/01/24/vue开发中遇到的问题小结/">
 
 
 
@@ -168,7 +168,7 @@
   }
 })();
   </script>
-  <title>关于vue中$nextTick的一点使用心得 | 👨‍💻HappyHacking</title>
+  <title>关于vue中$nextTick的一点使用心得 | 💻Lestat's Blog</title>
   
 
 
@@ -206,7 +206,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title" id="type-title"></span>
         <span class="logo-line-after"><i></i></span>
@@ -218,7 +218,7 @@
   animation: blink 500ms infinite;
 }
 </style>
-    <input type='hidden' id='type-title-value' value='👨‍💻HappyHacking'>
+    <input type="hidden" id="type-title-value" value="💻Lestat" s blog'>
     <script type="text/javascript" src="/lib/jquery/index.js"></script>
     <script type="text/javascript" src="/js/src/theater.min.js"></script>
     <script>
@@ -253,7 +253,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -263,7 +263,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -273,7 +273,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -283,7 +283,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -293,7 +293,7 @@
         <li class="menu-item menu-item-music">
           <a href="/music/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br>
             
             音乐
           </a>
@@ -303,7 +303,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -316,7 +316,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -383,13 +383,13 @@
     <link itemprop="mainEntityOfPage" href="https://lestatmiao.github.io/2018/01/24/vue开发中遇到的问题小结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LestatLee">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Lestat">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="https://lestat.b0.upaiyun.com/blog/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="👨‍💻HappyHacking">
+      <meta itemprop="name" content="💻Lestat's Blog">
     </span>
 
     
@@ -447,7 +447,7 @@
       
 
       
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.bootcss.com/aplayer/1.10.0/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.9.1/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>当下公司在做一个媒体门户网站,后台由另一家公司使用java开发并提供接口,本人负责开发后台页面,使用的是<a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="noopener">vue-element-admin</a>开发<br>下面说一下问题场景,在开发过程中有一个后台管理员角色页面,其中包含一个表单dialog,在其中使用了el-tree组件,<strong>相关</strong> 代码结构如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">class</span>=<span class="string">"filter-item"</span> <span class="attr">style</span>=<span class="string">"margin-left: 10px;"</span> <span class="attr">v-waves</span> @<span class="attr">click</span>=<span class="string">"handleCreate"</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">icon</span>=<span class="string">"el-icon-edit"</span>&gt;</span>新增角色</span><br><span class="line">    <span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-dialog</span> <span class="attr">:title</span>=<span class="string">"textMap[dialogStatus]"</span> <span class="attr">:visible.sync</span>=<span class="string">"dialogFormVisible"</span> <span class="attr">width</span>=<span class="string">"50%"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-form</span> <span class="attr">:rules</span>=<span class="string">"rules"</span> <span class="attr">ref</span>=<span class="string">"dataForm"</span> <span class="attr">:model</span>=<span class="string">"temp"</span> <span class="attr">label-position</span>=<span class="string">"top"</span> <span class="attr">label-width</span>=<span class="string">"90px"</span></span></span><br><span class="line"><span class="tag">           <span class="attr">style</span>=<span class="string">'width: 400px; margin-left:50px;'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">label</span>=<span class="string">"选择权限"</span> <span class="attr">prop</span>=<span class="string">"sysPermission"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">el-tree</span> <span class="attr">ref</span>=<span class="string">"tree"</span> <span class="attr">:data</span>=<span class="string">"sysPermission"</span> <span class="attr">:props</span>=<span class="string">"formProps"</span> <span class="attr">show-checkbox</span></span></span><br><span class="line"><span class="tag">                   @<span class="attr">check-change</span>=<span class="string">"handleCheckChange"</span> <span class="attr">node-key</span>=<span class="string">"id"</span>&gt;</span><span class="tag">&lt;/<span class="name">el-tree</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">el-form-item</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-dialog</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        <p>当下公司在做一个媒体门户网站,后台由另一家公司使用java开发并提供接口,本人负责开发后台页面,使用的是<a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="noopener">vue-element-admin</a>开发<br>下面说一下问题场景,在开发过程中有一个后台管理员角色页面,其中包含一个表单dialog,在其中使用了el-tree组件,<strong>相关</strong> 代码结构如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"filter-container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">class</span>=<span class="string">"filter-item"</span> <span class="attr">style</span>=<span class="string">"margin-left: 10px;"</span> <span class="attr">v-waves</span> @<span class="attr">click</span>=<span class="string">"handleCreate"</span> <span class="attr">type</span>=<span class="string">"primary"</span> <span class="attr">icon</span>=<span class="string">"el-icon-edit"</span>&gt;</span>新增角色</span><br><span class="line">    <span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-dialog</span> <span class="attr">:title</span>=<span class="string">"textMap[dialogStatus]"</span> <span class="attr">:visible.sync</span>=<span class="string">"dialogFormVisible"</span> <span class="attr">width</span>=<span class="string">"50%"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-form</span> <span class="attr">:rules</span>=<span class="string">"rules"</span> <span class="attr">ref</span>=<span class="string">"dataForm"</span> <span class="attr">:model</span>=<span class="string">"temp"</span> <span class="attr">label-position</span>=<span class="string">"top"</span> <span class="attr">label-width</span>=<span class="string">"90px"</span></span></span><br><span class="line"><span class="tag">           <span class="attr">style</span>=<span class="string">'width: 400px; margin-left:50px;'</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">label</span>=<span class="string">"选择权限"</span> <span class="attr">prop</span>=<span class="string">"sysPermission"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">el-tree</span> <span class="attr">ref</span>=<span class="string">"tree"</span> <span class="attr">:data</span>=<span class="string">"sysPermission"</span> <span class="attr">:props</span>=<span class="string">"formProps"</span> <span class="attr">show-checkbox</span></span></span><br><span class="line"><span class="tag">                   @<span class="attr">check-change</span>=<span class="string">"handleCheckChange"</span> <span class="attr">node-key</span>=<span class="string">"id"</span>&gt;</span><span class="tag">&lt;/<span class="name">el-tree</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">el-form-item</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-dialog</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>相关的js如下:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">        name: <span class="string">'sysRoleList'</span>,</span><br><span class="line">        data() &#123;</span><br><span class="line">            <span class="keyword">return</span> &#123;</span><br><span class="line">                tableKey: <span class="number">0</span>,</span><br><span class="line">                list: <span class="literal">null</span>,</span><br><span class="line">                total: <span class="literal">null</span>,</span><br><span class="line">                listLoading: <span class="literal">true</span>,</span><br><span class="line">                formLoading: <span class="literal">true</span>,</span><br><span class="line">                listQuery: &#123;</span><br><span class="line">                    page: <span class="number">1</span>,</span><br><span class="line">                    limit: <span class="number">20</span>,</span><br><span class="line">                    importance: <span class="literal">undefined</span>,</span><br><span class="line">                    title: <span class="literal">undefined</span>,</span><br><span class="line">                    type: <span class="literal">undefined</span>,</span><br><span class="line">                    sort: <span class="string">'+id'</span></span><br><span class="line">                &#125;,</span><br><span class="line">                dialogFormVisible: <span class="literal">false</span>,</span><br><span class="line">                dialogStatus: <span class="string">'update'</span>,</span><br><span class="line">                textMap: &#123;</span><br><span class="line">                    update: <span class="string">'编辑角色'</span>,</span><br><span class="line">                    create: <span class="string">'新增角色'</span></span><br><span class="line">                &#125;,</span><br><span class="line">                rules: &#123;</span><br><span class="line">                    sysRoleName: [&#123;<span class="attr">required</span>: <span class="literal">true</span>, <span class="attr">message</span>: <span class="string">'必须填写角色名称'</span>, <span class="attr">trigger</span>: <span class="string">'blur'</span>&#125;]</span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="comment">// 表单数据</span></span><br><span class="line">                temp: &#123;</span><br><span class="line">                    id: <span class="string">''</span>,</span><br><span class="line">                    sysPermissionList: [],</span><br><span class="line">                    sysRoleName: <span class="string">''</span></span><br><span class="line">                &#125;,</span><br><span class="line">                currentKeys: [],</span><br><span class="line">                <span class="comment">// 表单权限字段映射</span></span><br><span class="line">                formProps: &#123;</span><br><span class="line">                    label: <span class="string">'sysPermissionName'</span></span><br><span class="line">                &#125;,</span><br><span class="line">                sysPermission: &#123;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        created() &#123;</span><br><span class="line">            <span class="comment">// 列表数据</span></span><br><span class="line">            <span class="comment">// this.getList()</span></span><br><span class="line">            <span class="comment">// 获取所有权限</span></span><br><span class="line">            <span class="comment">// this.findAllSysPermission()</span></span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * todo:checkbox状态变更监听</span></span><br><span class="line"><span class="comment">            * */</span></span><br><span class="line">            handleCheckChange(data, checked, indeterminate) &#123;</span><br><span class="line">                <span class="keyword">const</span> idObj = &#123;<span class="attr">id</span>: data.id&#125;</span><br><span class="line">                <span class="keyword">this</span>.temp.sysPermissionList.push(idObj)</span><br><span class="line">            &#125;,</span><br><span class="line">            resetTemp() &#123;</span><br><span class="line">                <span class="keyword">this</span>.temp = &#123;</span><br><span class="line">                    id: <span class="string">''</span>,</span><br><span class="line">                    sysRoleName: <span class="string">''</span>,</span><br><span class="line">                    sysPermissionList: []</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            handleCreate() &#123;</span><br><span class="line">                <span class="keyword">this</span>.resetTemp()</span><br><span class="line">                <span class="keyword">this</span>.dialogStatus = <span class="string">'create'</span></span><br><span class="line">                <span class="keyword">this</span>.currentKeys = []</span><br><span class="line">                <span class="keyword">this</span>.dialogFormVisible = <span class="literal">true</span></span><br><span class="line">                <span class="keyword">this</span>.$nextTick(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">this</span>.$refs[<span class="string">'dataForm'</span>].clearValidate()</span><br><span class="line">                    <span class="keyword">this</span>.$refs.tree.setCheckedKeys(<span class="keyword">this</span>.currentKeys)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;,</span><br><span class="line">            handleUpdate(row) &#123;</span><br><span class="line">                <span class="keyword">this</span>.resetTemp()</span><br><span class="line">                <span class="keyword">this</span>.dialogStatus = <span class="string">'update'</span></span><br><span class="line">                <span class="keyword">this</span>.dialogFormVisible = <span class="literal">true</span></span><br><span class="line">                <span class="keyword">this</span>.temp = <span class="built_in">Object</span>.assign(&#123;&#125;, row) <span class="comment">// copy obj</span></span><br><span class="line">                <span class="keyword">this</span>.currentKeys = []</span><br><span class="line">                row.sysPermissionList.forEach(<span class="function">(<span class="params">value, index</span>) =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">this</span>.currentKeys.push(value[<span class="number">0</span>])</span><br><span class="line">                &#125;)</span><br><span class="line">                <span class="keyword">this</span>.$nextTick(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">this</span>.$refs[<span class="string">'dataForm'</span>].clearValidate()</span><br><span class="line">                    <span class="keyword">this</span>.$refs.tree.setCheckedKeys(<span class="keyword">this</span>.currentKeys)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
 <p>需求:<br>需要在每次编辑数据的时候触发<code>&lt;el-tree&gt;</code>的方法<code>setCheckedKeys</code><br>问题:<br>之前没有把<code>this.$refs.tree.setCheckedKeys()</code>写在<code>this.$nextTick</code>的callback之中,因此会提示:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">TypeError</span>: Cannot read property <span class="string">'setCheckedKeys'</span> <span class="keyword">of</span> <span class="literal">undefined</span></span><br></pre></td></tr></table></figure></p>
 <p>解决方法:<br>把dialog组件内的其他需要执行方法的组件方法写到<code>this.$nextTick</code>的callback之中<br>原因如下(官方):  </p>
@@ -475,14 +475,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="LestatLee WeChat Pay"/>
+        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="Lestat WeChat Pay">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="LestatLee Alipay"/>
+        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="Lestat Alipay">
         <p>支付宝</p>
       </div>
     
@@ -601,11 +601,9 @@ gitment.render('container')
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
-            <img class="site-author-image" itemprop="image"
-              src="https://lestat.b0.upaiyun.com/blog/avatar.jpg"
-              alt="LestatLee" />
+            <img class="site-author-image" itemprop="image" src="https://lestat.b0.upaiyun.com/blog/avatar.jpg" alt="Lestat">
           
-            <p class="site-author-name" itemprop="name">LestatLee</p>
+            <p class="site-author-name" itemprop="name">Lestat</p>
             <p class="site-description motion-element" itemprop="description"></p>
         </div>
 
@@ -709,18 +707,18 @@ gitment.render('container')
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright" >
+<div class="copyright">
   
   &copy;  2017 &mdash; 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">LestatLee</span>
+  <span class="author" itemprop="copyrightHolder">Lestat</span>
 
   
 </div>
-<div class='copyright' id='information'></div>
+<div class="copyright" id="information"></div>
 <script type="text/javascript" src="/js/src/theater.min.js"></script>
 <script>
   var theater = theaterJS();
@@ -743,23 +741,23 @@ gitment.render('container')
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-图片存储:<a href='https://www.upyun.com' target='_blank'>又拍云</a>
+图片存储:<a href="https://www.upyun.com" target="_blank">又拍云</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-博客托管:<a href='https://www.github.com' target='_blank'>Github</a>
+博客托管:<a href="https://www.github.com" target="_blank">Github</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-评论系统:<a href='https://github.com/imsun/gitment' target='_blank'>Gitment</a>
+评论系统:<a href="https://github.com/imsun/gitment" target="_blank">Gitment</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-站内搜索:<a href='https://www.algolia.com/' target='_blank'>Algolia</a>
+站内搜索:<a href="https://www.algolia.com/" target="_blank">Algolia</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-播放器:<a href='https://github.com/MoePlayer/APlayer' target='_blank'>Aplayer</a>
+播放器:<a href="https://github.com/MoePlayer/APlayer" target="_blank">Aplayer</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
@@ -969,5 +967,5 @@ document.addEventListener('visibilitychange', function() {
 	}
 });
 </script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

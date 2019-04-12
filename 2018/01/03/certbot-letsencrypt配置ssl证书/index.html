@@ -5,13 +5,13 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA" />
-<meta name="baidu-site-verification" content="xz2BfD2pLc" />
+<meta name="google-site-verification" content="qEejhbMbHK9scSZ807uP2YTOnn7aeNKT8HBeNM8npdA">
+<meta name="baidu-site-verification" content="xz2BfD2pLc">
 
 
 
@@ -21,8 +21,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -41,7 +41,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -81,23 +81,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="ssl," />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-
-
-
-  <link rel="alternate" href="/atom.xml" title="👨‍💻HappyHacking" type="application/atom+xml" />
+  <meta name="keywords" content="ssl,">
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+  <link rel="alternate" href="/atom.xml" title="💻Lestat's Blog" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
 
 
 
@@ -109,10 +109,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="certbot+letsencrypt配置免费单证书多域名ssl证书">
 <meta property="og:url" content="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/index.html">
-<meta property="og:site_name" content="👨‍💻HappyHacking">
+<meta property="og:site_name" content="💻Lestat&#39;s Blog">
 <meta property="og:description" content="前些天看到微信公众平台官方公告关于公众平台接口不再支持HTTP方式调用的公告之后决定把项目的协议从http改成https,于是开始在网上查,完成之后总结了一点经验    本文演示的是通用证书,即在certbot命令中不需要指定--apache或者--nginx之类,只需要在完成证书生成之后在服务器配置文件里进行引用即可  Let’s EncryptLet’s Encrypt 认证签发为每3个月一次">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T01:58:14.827Z">
+<meta property="og:updated_time" content="2018-03-08T01:58:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="certbot+letsencrypt配置免费单证书多域名ssl证书">
 <meta name="twitter:description" content="前些天看到微信公众平台官方公告关于公众平台接口不再支持HTTP方式调用的公告之后决定把项目的协议从http改成https,于是开始在网上查,完成之后总结了一点经验    本文演示的是通用证书,即在certbot命令中不需要指定--apache或者--nginx之类,只需要在完成证书生成之后在服务器配置文件里进行引用即可  Let’s EncryptLet’s Encrypt 认证签发为每3个月一次">
@@ -145,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/"/>
+  <link rel="canonical" href="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/">
 
 
 
@@ -168,7 +168,7 @@
   }
 })();
   </script>
-  <title>certbot+letsencrypt配置免费单证书多域名ssl证书 | 👨‍💻HappyHacking</title>
+  <title>certbot+letsencrypt配置免费单证书多域名ssl证书 | 💻Lestat's Blog</title>
   
 
 
@@ -206,7 +206,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title" id="type-title"></span>
         <span class="logo-line-after"><i></i></span>
@@ -218,7 +218,7 @@
   animation: blink 500ms infinite;
 }
 </style>
-    <input type='hidden' id='type-title-value' value='👨‍💻HappyHacking'>
+    <input type="hidden" id="type-title-value" value="💻Lestat" s blog'>
     <script type="text/javascript" src="/lib/jquery/index.js"></script>
     <script type="text/javascript" src="/js/src/theater.min.js"></script>
     <script>
@@ -253,7 +253,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -263,7 +263,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -273,7 +273,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
           </a>
@@ -283,7 +283,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
           </a>
@@ -293,7 +293,7 @@
         <li class="menu-item menu-item-music">
           <a href="/music/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-music"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-music"></i> <br>
             
             音乐
           </a>
@@ -303,7 +303,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
           </a>
@@ -316,7 +316,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -383,13 +383,13 @@
     <link itemprop="mainEntityOfPage" href="https://lestatmiao.github.io/2018/01/03/certbot-letsencrypt配置ssl证书/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LestatLee">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Lestat">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="https://lestat.b0.upaiyun.com/blog/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="👨‍💻HappyHacking">
+      <meta itemprop="name" content="💻Lestat's Blog">
     </span>
 
     
@@ -447,7 +447,7 @@
       
 
       
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.bootcss.com/aplayer/1.10.0/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.9.1/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p><strong>前些天看到微信公众平台官方公告<a href="https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&amp;announce_id=1505983913&amp;version=&amp;lang=zh_CN" target="_blank" rel="noopener">关于公众平台接口不再支持HTTP方式调用的公告</a>之后决定把项目的协议从<code>http</code>改成<code>https</code>,于是开始在网上查,完成之后总结了一点经验</strong>  </p>
+        <p><strong>前些天看到微信公众平台官方公告<a href="https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&amp;announce_id=1505983913&amp;version=&amp;lang=zh_CN" target="_blank" rel="noopener">关于公众平台接口不再支持HTTP方式调用的公告</a>之后决定把项目的协议从<code>http</code>改成<code>https</code>,于是开始在网上查,完成之后总结了一点经验</strong>  </p>
 <blockquote>
 <p>本文演示的是通用证书,即在<code>certbot</code>命令中不需要指定<code>--apache</code>或者<code>--nginx</code>之类,只需要在完成证书生成之后在服务器配置文件里进行引用即可</p>
 </blockquote>
@@ -504,14 +504,14 @@ to cancel):</code>步骤通过<code>,</code>来分隔域名</li>
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="LestatLee WeChat Pay"/>
+        <img id="wechat_qr" src="https://lestat.b0.upaiyun.com/blog/wxpay.png" alt="Lestat WeChat Pay">
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="LestatLee Alipay"/>
+        <img id="alipay_qr" src="https://lestat.b0.upaiyun.com/blog/alipay.png" alt="Lestat Alipay">
         <p>支付宝</p>
       </div>
     
@@ -625,7 +625,7 @@ gitment.render('container')
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -637,11 +637,9 @@ gitment.render('container')
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
-            <img class="site-author-image" itemprop="image"
-              src="https://lestat.b0.upaiyun.com/blog/avatar.jpg"
-              alt="LestatLee" />
+            <img class="site-author-image" itemprop="image" src="https://lestat.b0.upaiyun.com/blog/avatar.jpg" alt="Lestat">
           
-            <p class="site-author-name" itemprop="name">LestatLee</p>
+            <p class="site-author-name" itemprop="name">Lestat</p>
             <p class="site-description motion-element" itemprop="description"></p>
         </div>
 
@@ -761,18 +759,18 @@ gitment.render('container')
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright" >
+<div class="copyright">
   
   &copy;  2017 &mdash; 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">LestatLee</span>
+  <span class="author" itemprop="copyrightHolder">Lestat</span>
 
   
 </div>
-<div class='copyright' id='information'></div>
+<div class="copyright" id="information"></div>
 <script type="text/javascript" src="/js/src/theater.min.js"></script>
 <script>
   var theater = theaterJS();
@@ -795,23 +793,23 @@ gitment.render('container')
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-图片存储:<a href='https://www.upyun.com' target='_blank'>又拍云</a>
+图片存储:<a href="https://www.upyun.com" target="_blank">又拍云</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-博客托管:<a href='https://www.github.com' target='_blank'>Github</a>
+博客托管:<a href="https://www.github.com" target="_blank">Github</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-评论系统:<a href='https://github.com/imsun/gitment' target='_blank'>Gitment</a>
+评论系统:<a href="https://github.com/imsun/gitment" target="_blank">Gitment</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-站内搜索:<a href='https://www.algolia.com/' target='_blank'>Algolia</a>
+站内搜索:<a href="https://www.algolia.com/" target="_blank">Algolia</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
-播放器:<a href='https://github.com/MoePlayer/APlayer' target='_blank'>Aplayer</a>
+播放器:<a href="https://github.com/MoePlayer/APlayer" target="_blank">Aplayer</a>
 </div>
 <span class="post-meta-divider">|</span>
 <div class="theme-info">
@@ -1021,5 +1019,5 @@ document.addEventListener('visibilitychange', function() {
 	}
 });
 </script>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
